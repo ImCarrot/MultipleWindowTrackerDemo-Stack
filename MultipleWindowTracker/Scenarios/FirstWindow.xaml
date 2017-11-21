@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="MultipleWindowTracker.Scenarios.FirstWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultipleWindowTracker.Scenarios"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Yellow">
+        <StackPanel Padding="10">
+            <TextBlock Text="FIRST WINDOW" FontSize="30" HorizontalAlignment="Center"/>
+            <Button Content="Open Main Window" Tag="main" Margin="10" HorizontalAlignment="Stretch" Click="HandleWindowChange"/>
+            <Button Content="Open Second Window" Tag="second" Margin="10" HorizontalAlignment="Stretch" Click="HandleWindowChange"/>
+            <Button Content="Open Thrid Window" Tag="third" Margin="10" HorizontalAlignment="Stretch" Click="HandleWindowChange"/>
+        </StackPanel>
+    </Grid>
+</Page>
